@@ -1,0 +1,192 @@
+
+.espacamento {
+  padding-top: 4em;
+}
+
+body {
+  font-family: 'Oswald', sans-serif;
+}
+
+/*HEADER*/
+header {
+  height: 293px;
+  background: #cccccccc;
+}
+
+.h1header {
+  font-size: 50px;
+  position: absolute;
+  top: 90px;
+  float: left;
+  padding-left: 30px;
+}
+
+.caixa {
+  position: relative;
+  width: 940px;
+  margin: 0 auto;
+}
+
+nav {
+  position: absolute;
+  top: 110px;
+  right: 0;
+}
+
+nav li{
+  display: inline;
+  margin-left: 15px;
+}
+
+nav a {
+  text-transform: uppercase;
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 22px;
+}
+
+nav a:hover {
+  color: #c78c19;
+  text-decoration: underline;
+}
+
+.banner {
+  width: 100%;
+}
+
+.titulo-principal {
+  text-align: center;
+  font-size: 2em;
+  margin: 0 0 1em;
+  clear: left;
+}
+
+.principal {
+  padding: 3em 0;
+  background: #fefefe;
+  width: 940px;
+  margin: 0 auto;
+}
+
+.principal p {
+  margin: 0 0 1em;
+  font-weight: 200;
+}
+
+.principal strong {
+  font-weight: 400;
+}
+
+.principal em {
+  font-style: italic;
+}
+/***********/
+
+/*UTENSÍLIOS E MAPA*/
+.utensilios {
+  width: 120px;
+  float: left;
+  margin: 0 20px 20px 0;
+}
+
+.mapa {
+  background: linear-gradient(#fefefe, #888888);
+}
+
+.mapa p {
+  text-align: center;
+  margin: 0 0 2em;
+  font-weight: 300;
+}
+
+.mapa-conteudo {
+  width: 940px;
+  margin: 0 auto;
+}
+/***********/
+
+/*BENEFÍCIOS*/
+.beneficios {
+  padding: 3em 0;
+  background: #888888;
+}
+
+.img-beneficios {
+  width: 60%;
+  opacity: 1;
+  transition: 400ms;
+  box-shadow: 10px 10px 5px #000000;
+}
+
+.img-beneficios:hover {
+  opacity: 0.3;
+}
+
+.conteudo-beneficios {
+  width: 640px;
+  margin: 0 auto;
+}
+
+.lista-beneficios {
+  width: 40%;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.itens {
+  line-height: 1.5;
+  font-weight: 200;
+}
+
+.itens:first-child {
+  font-weight: 400;
+}
+
+.itens::before {
+  content: "🟎";
+}
+/***********/
+
+/*VÍDEO*/
+.video {
+  width: 560px;
+  margin: 2em auto;
+}
+/***********/
+
+/*FOOTER*/
+footer {
+  width: 100%;
+  margin-top: 30px;
+  padding: 25px 0;
+  background: url("/imagens/bg.jpg");
+  text-align: center;
+}
+
+.copy {
+  color: white;
+  font-size: 13px;
+}
+
+/*RESPONSIVIDADE*/
+
+@media screen and (max-width: 480px){
+  .caixa, .principal, .conteudo-beneficios, .mapa-conteudo, .video {
+    width: auto;
+  }
+
+  h1{
+    text-align: center;
+  }
+
+  nav {
+    position: static;
+    text-align: center;
+  }
+
+  .lista-beneficios, .img-beneficios {
+    width: 100%;
+  }
+
+}
