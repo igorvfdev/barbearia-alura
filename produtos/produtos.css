@@ -1,7 +1,11 @@
 
+body {
+  font-family: 'Oswald', sans-serif;
+}
+
 header {
+  height: 293px;
   background: #bbbbbbbb;
-  padding: 20px 0;
 }
 
 .caixa {
@@ -24,9 +28,9 @@ nav li{
 nav a {
   text-transform: uppercase;
   color:black;
-  font-weight: bold;
-  font-size: 22px;
+  font-weight: 400;
   text-decoration: none;
+  font-size: 22px;
 }
 
 nav a:hover {
@@ -97,7 +101,7 @@ footer {
   }
 
   main{
-    width: 430px;
+    margin: 0 20px;
   }
 
   h1{
@@ -109,11 +113,13 @@ footer {
     text-align: center;
   }
 
+  .produtos {
+    width: 90%;
+  }
+
   .produtos li{
-    display: block;
     width: 100%;
-    margin: 20px;
-    
+    margin: 15px 0;
     text-align: center;
   }
 
