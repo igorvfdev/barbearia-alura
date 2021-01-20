@@ -1,8 +1,12 @@
 
+body {
+  font-family: 'Oswald', sans-serif;
+}
+
 /*HEADER*/
 header {
+  height: 293px;
   background: #bbbbbbbb;
-  padding: 20px 0;
 }
 
 .caixa {
@@ -25,9 +29,10 @@ nav li{
 nav a {
   text-transform: uppercase;
   color:black;
-  font-weight: bold;
-  font-size: 22px;
+  font-weight: 400;
   text-decoration: none;
+  font-size: 22px;
+  font-family: 'Oswald', sans-serif;
 }
 
 nav a:hover {
@@ -108,4 +113,41 @@ footer {
 .copy {
   color: white;
   font-size: 13px;
+}
+
+/*RESPONSIVIDADE/CELULAR*/
+@media screen and (max-width: 480px){
+  .caixa, .principal{
+    width: auto;
+  }
+
+  main {
+    width: 320px;
+  }
+
+  h1{
+    text-align: center;
+  }
+
+  nav {
+    position: static;
+    text-align: center;
+  }
+
+  form {
+    width: 100%;
+  }
+
+  .input-padrao {
+    width: 80%;
+  }
+
+  table {
+    margin: 20px auto 0;
+  }
+
+  .enviar {
+    width: 100%;
+    margin-top: 10px;
+  }
 }
